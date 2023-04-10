@@ -7,52 +7,124 @@
 
 .container {
     max-width: 1240px;
-    margin: auto;
+    margin: 100px auto;
     padding: 0 20px;
 }
 
 .top {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
     margin-bottom: 55px;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .info {
+        display: flex;
+        gap: 117px;
+
+        div {
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                color: #707070;
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 64px;
+            }
+        }
+    }
 }
 
-.top img {
-    width: 100%;
-    object-fit: contain;
+.bottom {
+    nav {
+        display: flex;
+        gap: 54px;
+        align-items: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div {
+            white-space: nowrap;
+        }
+
+        p {
+            color: #707070;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .speed,
+        .temperature,
+        .disks {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 48px;
+            }
+
+            .btns {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                & :last-child {
+                    rotate: 180deg;
+                }
+
+                img:hover {
+                    filter: drop-shadow(0 0 5px black);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .conditioner,
+        .long_range,
+        .car_view {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: start;
+
+            .switch {
+                width: 40px;
+                height: 25px;
+                background-color: #8E9AA7;
+                position: relative;
+                cursor: pointer;
+                border-radius: 15px;
+                transition: .4s ease;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: white;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 2.5px;
+                    left: 2.5px;
+                    transition: .4s ease;
+                }
+            }
+        }
+    }
 }
 
-.info {
-    display: flex;
-    gap: 117px;
+.on {
+    background-color: #004DFF !important;
 }
 
-.power_reserve {}
-
-.price {}
-
-.bottom {}
-
-.speed {}
-
-.value {}
-
-.btns {}
-
-.up {}
-
-.down {}
-
-.temperature {}
-
-.disks {}
-
-.conditioner {}
-
-.switch {}
-
-.long_range {}
-
-.car_view {}
+.on::after {
+    left: 16.5px !important;
+}
