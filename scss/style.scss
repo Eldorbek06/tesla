@@ -7,8 +7,8 @@
 
 .container {
     max-width: 1240px;
-    margin: 100px auto;
-    padding: 0 20px;
+    margin: auto;
+    padding: 0 20px 100px 0;
 }
 
 .top {
@@ -17,26 +17,45 @@
     align-items: center;
     margin-bottom: 55px;
 
-    img {
-        width: 100%;
-        object-fit: contain;
+    .image {
+        position: relative;
+
+        .tesla {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .balon1 {
+            position: absolute;
+            top: 333px;
+            left: 313px;
+            animation: rotateBalon 1s infinite;
+        }
+
+        .balon2 {
+            position: absolute;
+            top: 333px;
+            right: 326px;
+            animation: rotateBalon 1s infinite;
+        }
     }
 
-    .info {
-        display: flex;
-        gap: 117px;
+}
 
-        div {
-            p {
-                font-weight: 500;
-                font-size: 20px;
-                color: #707070;
-            }
+.info {
+    display: flex;
+    gap: 117px;
 
-            h1 {
-                font-weight: 700;
-                font-size: 64px;
-            }
+    div {
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            color: #707070;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 64px;
         }
     }
 }
@@ -127,4 +146,58 @@
 
 .on::after {
     left: 16.5px !important;
+}
+
+@keyframes rotateBalon {
+    0%{
+        rotate: 0deg;
+    }
+    6%{
+        rotate: -22.5deg;
+    }
+    12%{
+        rotate: -45deg;
+    }
+    18%{
+        rotate: -67.5deg;
+    }
+    25%{
+        rotate: -90deg;
+    }
+    31%{
+        rotate: -112.5deg;
+    }
+    37%{
+        rotate: -135deg;
+    }
+    43%{
+        rotate: -157.5deg;
+    }
+    50%{
+        rotate: -180deg;
+    }
+    56%{
+        rotate: -202.5deg;
+    }
+    62%{
+        rotate: -225deg;
+    }
+    68%{
+        rotate: -247.5deg;
+    }
+    75%{
+        rotate: -270deg;
+    }
+    81%{
+        rotate: -292.5deg;
+    }
+    87%{
+        rotate: -315deg;
+    }
+    93%{
+        rotate: -337.5deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
 }
