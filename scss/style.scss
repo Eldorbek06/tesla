@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.top img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.info {
+    display: flex;
+    gap: 117px;
+}
+
+.power_reserve {}
+
+.price {}
+
+.bottom {}
+
+.speed {}
+
+.value {}
+
+.btns {}
+
+.up {}
+
+.down {}
+
+.temperature {}
+
+.disks {}
+
+.conditioner {}
+
+.switch {}
+
+.long_range {}
+
+.car_view {}
