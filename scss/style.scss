@@ -9,6 +9,7 @@
     max-width: 1240px;
     margin: auto;
     padding: 0 20px 100px 0;
+    user-select: none;
 }
 
 .top {
@@ -25,18 +26,20 @@
             object-fit: contain;
         }
 
+        .balon{
+            animation: rotateBalon 1s infinite;
+        }
+
         .balon1 {
             position: absolute;
             top: 333px;
             left: 313px;
-            animation: rotateBalon 2s infinite;
         }
 
         .balon2 {
             position: absolute;
             top: 333px;
             right: 326px;
-            animation: rotateBalon 2s infinite;
         }
     }
 
@@ -45,6 +48,11 @@
 .info {
     display: flex;
     gap: 117px;
+
+    .price{
+        width: 240px;
+        white-space: nowrap;
+    }
 
     div {
         p {
@@ -64,12 +72,19 @@
     nav {
         display: flex;
         gap: 54px;
-        align-items: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
 
-        div {
-            white-space: nowrap;
+        .conditioner{
+            width: 90px;
+        }
+
+        .disks{
+            width: 100px;
+        }
+
+        .speed h1{
+            width: 200px;
         }
 
         p {
@@ -148,104 +163,140 @@
     left: 16.5px !important;
 }
 
+.unclickable{
+    filter: invert(50%);
+}
+
 @keyframes rotateBalon {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    3%{
+
+    3% {
         rotate: -11deg;
     }
-    6%{
+
+    6% {
         rotate: -22.5deg;
     }
-    9%{
+
+    9% {
         rotate: -33.5deg;
     }
-    12%{
+
+    12% {
         rotate: -45deg;
     }
-    15%{
+
+    15% {
         rotate: -56deg;
     }
-    18%{
+
+    18% {
         rotate: -67.5deg;
     }
-    21%{
+
+    21% {
         rotate: -78.5deg;
     }
-    25%{
+
+    25% {
         rotate: -90deg;
     }
-    28%{
+
+    28% {
         rotate: -101deg;
     }
-    31%{
+
+    31% {
         rotate: -112.5deg;
     }
-    34%{
+
+    34% {
         rotate: -123.5deg;
     }
-    37%{
+
+    37% {
         rotate: -135deg;
     }
-    40%{
+
+    40% {
         rotate: -146deg;
     }
-    43%{
+
+    43% {
         rotate: -157.5deg;
     }
-    46%{
+
+    46% {
         rotate: -168.5deg;
     }
-    50%{
+
+    50% {
         rotate: -180deg;
     }
-    53%{
+
+    53% {
         rotate: -191deg;
     }
-    56%{
+
+    56% {
         rotate: -202.5deg;
     }
-    59%{
+
+    59% {
         rotate: -213.5deg;
     }
-    62%{
+
+    62% {
         rotate: -225deg;
     }
-    65%{
+
+    65% {
         rotate: -236deg;
     }
-    68%{
+
+    68% {
         rotate: -247.5deg;
     }
-    71%{
+
+    71% {
         rotate: -258.5deg;
     }
-    75%{
+
+    75% {
         rotate: -270deg;
     }
-    78%{
+
+    78% {
         rotate: -281deg;
     }
-    81%{
+
+    81% {
         rotate: -292.5deg;
     }
-    84%{
+
+    84% {
         rotate: -304.5deg;
     }
-    87%{
+
+    87% {
         rotate: -315deg;
     }
-    90%{
+
+    90% {
         rotate: -326deg;
     }
-    93%{
+
+    93% {
         rotate: -337.5deg;
     }
-    96%{
+
+    96% {
         rotate: -348.5deg;
     }
-    100%{
+
+    100% {
         rotate: -360deg;
     }
 }

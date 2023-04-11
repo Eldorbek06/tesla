@@ -1,0 +1,76 @@
+.image {
+    width: 1240px;
+    margin-bottom: 50px;
+    .tesla {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 70px;
+
+    .colors,
+    .car_view {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+        color: #707070;
+        font-weight: 500;
+
+        .switch {
+            width: 40px;
+            height: 25px;
+            background-color: #8E9AA7;
+            position: relative;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: .4s ease;
+
+            &::after {
+                content: '';
+                display: block;
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                position: absolute;
+                top: 2.5px;
+                left: 2.5px;
+                transition: .4s ease;
+            }
+        }
+
+        .list {
+            display: flex;
+            gap: 10px;
+
+            span {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                transition: .1s;
+
+                &:nth-child(1) {
+                    background-color: #262626;
+                }
+
+                &:nth-child(2) {
+                    background-color: #d7d7d7;
+                }
+
+                &:nth-child(3) {
+                    background-color: #E6DDD0;
+                }
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
